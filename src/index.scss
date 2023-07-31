@@ -2,8 +2,8 @@
 
 
 :root {
-  font-family: "Futura PT", system-ui, Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font: 62.5% "Futura PT", system-ui, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
@@ -24,3 +24,30 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+@media (orientation: landscape) and (min-width: 1440px) {
+  :root {
+      font-size:1.1111111111vw
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1440px) {
+  :root {
+      font-size:1rem;
+  }
+}
+
+/* 
+@media (orientation: landscape) and (min-aspect-ratio: 1366/767) {
+  :root {
+      font-size:2.0833333333vh
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  :root {
+      font-size:4.4444444444vw
+  }
+}
+
+ */

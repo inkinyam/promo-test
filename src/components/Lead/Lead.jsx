@@ -1,6 +1,6 @@
 import './Lead.scss';
 import PropTypes from "prop-types";
-import cupsImg from '../../assets/cups.png';
+import cupsImg from '../../assets/cups2.png';
 
 export const Lead = ({children}) => {
   return (

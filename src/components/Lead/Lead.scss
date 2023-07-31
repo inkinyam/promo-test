@@ -2,7 +2,6 @@
   background-color: #797979;
   width: 100%;
   height: 100vh;
-
   position: relative;
   overflow: hidden;
 
@@ -30,54 +29,54 @@
   .lead__textblock {
     position: relative;
     color: white;
-    max-width: 17em;
-    margin: 2.33rem 0 0 13.7rem;
+    max-width: 19.125rem;
+    margin: 2.625rem 0 0 15.4375rem;
     z-index: 2;
 
     @media screen and (max-width: 822px) {
-      margin: 1.4444rem 0 0 2rem;
+      margin: 1.625rem 0 0 2.375rem;
     }
 
     
     @media screen and (max-width: 526px) {
-      margin: 1rem 0 0 1.333rem;
+      margin: 2.375rem 0 0 1.5rem;
       max-width: calc(100% - 2.66666rem);
     }
   }
 
   .lead__title {
-    font-size: 3.44rem;
+    font-size: 3.875rem;
     line-height: 100%;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
     max-width: 100%;
-    margin-bottom: 0.44rem;
+    margin-bottom: 0.5rem;
     transition: font-size 0.4s ease;
 
     @media screen and (max-width: 526px) {
-      font-size: 2.333333rem;
+      font-size: 2.625rem;
     }
   }
 
   .lead__description {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 0.88rem; 
+    margin-bottom: 1rem; 
   }
 
   .lead__dates {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.38rem 1.667rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 50px;
     border: 1px solid white;
     width: fit-content;
     cursor: default;
 
-    font-size: 0.88rem;
+    font-size: 1rem;
   }
 }

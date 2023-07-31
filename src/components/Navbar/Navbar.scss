@@ -3,12 +3,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 2.8em;
+  column-gap: 3.25em;
   list-style: none;
   position: relative;
   z-index: 3;
 
-  padding: 1.667rem 0;
+  padding: 1.875rem 0;
   background-color: rgba(0, 0, 0, 0.5);
 
   .navbar__item {
@@ -16,7 +16,7 @@
      font-style: normal;
      font-weight: 450;
      line-height: normal;
-     font-size: 1rem;
+     font-size: 1.125rem;
   }
 
   .navbar__link {

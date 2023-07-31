@@ -4,24 +4,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.585rem 0 6rem;
+  padding: 4.03125rem 0 6.75rem;
 
   @media screen and (max-width: 822px) {
     padding: 3.585rem 0;
   }
 
   @media screen and (max-width: 526px) {
-    padding: 1.5rem 0 3.33333333333rem;
+    padding: 1.75rem 0 3.75rem;
   }
 
   .about__title {
     text-align: center;
-    font-size: 3.44rem;
+    font-size: 3.875rem;
     font-style: normal;
     font-weight: 600;
     line-height: 100%;
     text-transform: uppercase;
-    margin-bottom: 2.88rem;
+    margin-bottom: 3.25rem;
     transition: font-size 0.4s ease, margin 0.4s ease;
 
     
@@ -30,9 +30,13 @@
     }
 
     @media screen and (max-width: 526px) {
-      font-size: 2.111rem;
+      font-size: 2.375rem;
       max-width: 70%;
-      margin-bottom: 1.2222222rem;
+      margin-bottom: 1.375rem;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 2rem;
+      max-width: 75%;
     }
   }
 
@@ -40,21 +44,21 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    row-gap: 0.8rem;
-    max-width: 41.8rem;
+    row-gap: 1rem;
+    max-width: 47rem;
 
     @media screen and (max-width: 822px) {
-      max-width: calc(100% - 4.444rem);
+      max-width: calc(100% - 5.125rem);
     }
 
     @media screen and (max-width: 526px) {
-      max-width: calc(100% - 4.1111111111111111em);
+      max-width: calc(100% - 4.625em);
     }
   }
 
   .card {
     display: flex;
-    max-height: 15rem;
+    max-height: 16.875rem;
     height: 100%;
     flex-direction: row-reverse;
     background-color: #F7F7F7;
@@ -68,15 +72,19 @@
 
       @media screen and (max-width: 822px) {
         .card__texblock {
-          padding:  2.1111rem;
+          padding:  2.375rem;
         }
       }
 
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 635px) {
         flex-direction: column;
 
         .card__title {
           max-width: 100%;
+        }
+
+        .card__texblock {
+          padding: 1.5rem 1rem 1.875rem;
         }
       }
     }
@@ -85,7 +93,7 @@
        max-height: unset;
     }
 
-    @media screen and (max-width: 526px) {
+    @media screen and (max-width: 635px) {
       flex-direction: column;
     }
     
@@ -101,7 +109,7 @@
         min-width: 52%;
       }
 
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 635px) {
         min-width: 100%;
         width: 100%;
       }
@@ -110,60 +118,60 @@
     .card__texblock {
       display: flex;
       flex-direction: column;
-      row-gap: 0.4444rem;
+      row-gap: 0.5rem;
       justify-content: center;
-      padding: 0 2.222rem ;
+      padding: 0 2.5rem ;
       width: 52%;
 
       @media screen and (max-width: 822px) {
-        padding: 2.1111rem  1.1666667rem;
+        padding: 2.375rem  1.3125rem;
         width: 48%;
       }
 
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 635px) {
         min-width: 100%;
         width: 100%;
-        padding: 1.33333333333rem 1.66666666667rem 1.666666667rem;
+        padding: 1.5rem 0.5rem 1.875rem;
         text-align: center;
         align-items: center;
-        row-gap: 0.222222222rem;
+        row-gap: 0.25rem;
       }
     }
 
     .card__title {
-      font-size: 1.777778rem;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 500;
       line-height:  112.5%;
       text-transform: uppercase;
 
-      @media screen and (max-width: 526px) {
-        font-size: 1.3333rem;
-        margin-bottom: 0.222222222rem;
+      @media screen and (max-width: 635px) {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;
       }
     }
 
     .card__text {
-      font-size: 1rem;
+      font-size: 1.125rem;
       font-weight: 400;
       line-height: normal;
       opacity: 0.699999988079071;
 
       
-      @media screen and (max-width: 526px) {
-        font-size: 0.7777rem;
+      @media screen and (max-width: 635px) {
+        font-size: 0.875rem;
       }
     }
 
     .card__description {
-      font-size: 0.77rem;
+      font-size: 0.875rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       opacity: 0.5;
 
-        @media screen and (max-width: 526px) {
-          font-size: 0.66666666666667rem;
+      @media screen and (max-width: 635px) {
+          font-size: 0.75rem;
         }
     }
   }
