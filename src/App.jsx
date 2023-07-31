@@ -6,7 +6,6 @@ import { Lead } from './components/Lead/Lead';
 import { Navbar, NavbarItem } from './components/Navbar/Navbar';
 import { Prize } from './components/Prize/Prize';
 import { Rules } from './components/Rules/Rules';
-import { Up } from './components/Up/Up';
 
 function App() {
  
@@ -72,7 +71,6 @@ function App() {
           </AccordionItem>
         </Accordion>
       </FAQ>
-      <Up />
     </>
   )
 }
