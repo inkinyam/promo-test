@@ -1,0 +1,120 @@
+.prize {
+  background: radial-gradient(49.05% 49.02% at 49.44% 58.27%, #FA8070 0%, #E3382A 100%);
+  color: white;
+  padding: 4.16rem 4.16rem 0;
+  transition: padding 0.4s ease;
+  overflow: hidden;
+
+  @media screen and (max-width: 822px) {
+    padding: 2.222rem  2.222rem 0;
+  }
+
+  @media screen and (max-width: 526px) {
+    padding: 2.222rem 1.88889rem 0;
+  }
+
+  .prize__title {
+    font-size: 2.33rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0 auto 1rem;
+    transition: font-size 0.4s ease;
+
+    @media screen and (max-width: 526px) {
+      font-size: 1.33rem;
+      margin: 0 auto 0.7777rem;
+    }
+  }
+
+  .prize__description {
+    text-align: center;
+    font-size: 1.33rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    max-width: 52%;
+    margin: 0 auto;
+    transition: font-size 0.4s ease;
+
+    @media screen and (max-width: 822px) {
+     max-width: calc(100% - 4.4444rem);
+    }
+
+    @media screen and (max-width: 526px) {
+      font-size: 0.777rem;
+    }
+  }
+
+  .prize__info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 52%;
+
+    justify-items: center;
+    margin: 0 auto;
+    position: relative;
+
+    .prize__imgbox {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column: 1;
+
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .prize__strip {
+      width: 857px;
+      height: 441px;
+      position: absolute;
+      bottom: 0px;
+      margin-right: 38px;
+    }
+
+    .prize__info-text {
+      color: #FFF;
+      text-align: center;
+      font-size: 2.33em;
+      font-style: normal;
+      font-weight: 600;
+      line-height:114.286%;
+      text-transform: uppercase;
+      grid-column: 1;
+      grid-row: 1;
+      align-self: flex-end;
+      justify-self: center;
+      max-width: 50%;
+      transition: font-size 0.4s ease;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 75%;
+      }
+      @media screen and (max-width: 822px) {
+        font-size: 1.805rem;
+
+      }
+    }
+
+    .prize__info-number {
+      font-size: 3.44em;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      grid-column: 1;
+      grid-row: 2;
+      z-index: 5;
+      position: relative;
+      margin-top: 1.5rem;
+      transition: font-size 0.4s ease;
+
+      @media screen and (max-width: 822px) {
+        font-size: 2.66rem;
+      }
+    }
+  }
+}
