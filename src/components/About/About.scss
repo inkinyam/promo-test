@@ -175,4 +175,24 @@
         }
     }
   }
+
+  .about__description {
+    max-width: 47rem;
+    text-align: center;
+
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 1.75rem;
+    
+    @media screen and (max-width: 822px) {
+      max-width: calc(100% - 5.125rem);
+    }
+
+    @media screen and (max-width: 526px) {
+      max-width: calc(100% - 4.625em);
+      font-size: 1rem;
+    }
+  }
 }

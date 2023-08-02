@@ -1,0 +1,305 @@
+.winners {
+  max-width: 47rem;
+  margin: 0.75rem auto 3.5rem;
+  transition: max-width 0.4s ease;
+  padding: 1.75rem 3rem 1.25rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+
+  background-color: #e4392a;
+  color: white;
+
+  @media screen and (max-width: 822px) {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.125rem 2rem;
+  }
+
+  @media screen and (max-width: 526px) {
+    padding: 2rem;
+    margin: 0rem auto 2rem;
+    box-shadow: unset;
+  }
+
+  @media screen and (max-width: 372px) {
+    padding: 2rem 1rem;
+    margin: 0rem auto 2rem;
+    box-shadow: unset;
+  }
+
+  .winners__title {
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+
+    
+    @media screen and (max-width: 822px) {
+      line-height: normal;
+    }
+
+    
+    @media screen and (max-width: 526px){
+      flex-direction: column;
+      row-gap: 0.75rem;
+      justify-content: stretch;
+    }
+  }
+
+  .winnerst__titlebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media screen and (max-width: 822px) {
+      align-items: flex-start;
+    }
+
+    
+    @media screen and (max-width: 526px){
+      flex-direction: column;
+      row-gap: 0.75rem;
+      justify-content: stretch;
+    }
+  }
+
+  .winners__form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 14.6875rem;
+    height: 2.375rem;
+    padding: 0.1875rem 0.1875rem 0.1875rem 0.75rem;
+    background-color: transparent;
+    border: 1px solid white;
+    position: relative;
+
+    @media screen and (max-width: 526px){
+      max-width: 100%;
+      padding: 0.1875rem 1rem;
+    }
+
+    .winners__input {
+      flex-shrink: 1;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      &::placeholder {
+        color: white;
+        opacity: 0.699999988079071;
+      }
+
+      &.winners__input_error {
+        color: darken($color: #e4392a, $amount: 30)
+      }
+    }
+
+    button[type="submit"] {
+      flex-shrink: 0;
+      height: 100%;
+      aspect-ratio: 1;
+      background-color: #fff;
+      border: none;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease;
+      transform: scale(1);
+
+      @media screen and (max-width: 526px){
+        display: none;
+      }
+      &:hover {
+        cursor: pointer;
+
+        svg {
+          width: 0.9205rem;
+          height: 0.9426875rem;
+          flex-shrink: 0;
+
+          circle,
+          path {
+            stroke: black;
+          }
+        }
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      svg {
+        width: 0.9205rem;
+        height: 0.9426875rem;
+        flex-shrink: 0;
+
+        circle,
+        path {
+          stroke: #c91a31;
+          transition: stroke 0.4s ease-in;
+        }
+      }
+    }
+
+    .winners__error {
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      max-width: 100%;
+      font-size: 0.75rem;
+      display: none;
+      &.winners__error_show {
+        display: block;
+      }
+    }
+  }
+
+  .winners__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    list-style: none;
+    margin: 1.5rem 0 0.75rem;
+    padding: 0.25rem 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: all 0.4s ease;
+
+    @media screen and (max-width: 822px) {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 1.5rem 0 1rem;
+      padding: 0.25rem 2rem;
+    }
+
+    
+    @media screen and (max-width: 526px){
+      grid-template-columns: repeat(2, 1fr);
+      margin: 1rem 0 1rem;
+      padding: 0.25rem 0;
+      column-gap: 0.75rem;
+    }
+
+    @media screen and (max-width: 374px){
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 0rem;
+    }
+  }
+
+  .winners__notfind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    margin: 1.5rem 0 0.75rem;
+    padding: 2rem 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: all 0.4s ease;
+  }
+
+  .winners__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+
+    &:nth-of-type(6n + 5),
+    &:nth-of-type(6n + 6),
+    &:nth-of-type(6n + 4) {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    p {
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @media screen and (max-width: 526px){
+        font-size: 0.75rem;
+      }
+    }
+
+    @media screen and (max-width: 822px) {
+      padding: 0.625rem 0.3rem;
+
+
+      &:nth-of-type(6n + 5),
+      &:nth-of-type(6n + 6),
+      &:nth-of-type(6n + 4) {
+        background-color: transparent;
+      }
+
+      &:nth-child(4n+3),
+      &:nth-child(4n+4){
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      &:nth-of-type(odd):last-of-type {
+        display: none;
+      }
+    }
+  }
+
+  .winners__pagination {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    justify-content: center;
+
+    .winners__pagination-button {
+      background: transparent;
+      border: none;
+      color: #fff;
+      opacity: 0.5;
+
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 0 0.25rem;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.75;
+      }
+    }
+
+    .winners__pagination-dots {
+      background: transparent;
+      border: none;
+      color: #fff;
+      opacity: 0.5;
+
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 0 0.5rem;
+    }
+
+
+    .winners__pagination-item {
+      &.active {
+        .winners__pagination-button {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -38,7 +38,11 @@
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
-    margin: 0 auto;
+    margin: 0 auto 5rem;
+    @media screen and (max-width: 526px) {
+      margin: 0 auto 3.75rem;
+    }
+
 
     &:hover {
       background-color: black;

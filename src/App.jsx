@@ -6,6 +6,7 @@ import { Lead } from './components/Lead/Lead';
 import { Navbar, NavbarItem } from './components/Navbar/Navbar';
 import { Prize } from './components/Prize/Prize';
 import { Rules } from './components/Rules/Rules';
+import { Winners } from './components/Winners/Winners';
 
 function App() {
  
@@ -22,6 +23,7 @@ function App() {
       <About />
       <Prize />
       <Rules />
+      <Winners />
 
       <FAQ>
         <Accordion>
