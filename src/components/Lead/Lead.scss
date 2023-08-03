@@ -95,10 +95,10 @@
 .container { 
   position: relative;
   &:nth-of-type(1) {
-    transform: translate(-15em, -0.25em);
+    transform: translate(-30em, -0.25em);
   }
   &:nth-of-type(2) {
-    transform: translate(-15em, 22em);
+    transform: translate(-30em, 22em);
   }
 
   @media screen and (max-width: 822px) {
@@ -120,19 +120,19 @@
 
 @keyframes line1 {
   0% {
-    transform: rotate(-30deg) translateX(-21.9375em);
+    transform: rotate(-30deg) translateX(-5em);
   }
   100% {
-    transform: rotate(-30deg) translateX(-5em);
+    transform: rotate(-30deg) translateX(-21.9375em);
   }
 }
 
 
 @keyframes line2 {
   0% {
-    transform: rotate(-30deg) translateX(-5em);
+    transform: rotate(-30deg) translateX(11.9375em);
   }
   100% {
-    transform: rotate(-30deg) translateX(11.9375em);
+    transform: rotate(-30deg) translateX(-5em);
   }
 }
